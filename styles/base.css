@@ -19,6 +19,11 @@ header h1 {
     padding: 1rem;
 }
 
+header span {
+    color: rgb(209, 213, 133);
+    font-size: 25px;
+}
+
 nav {
     grid-column: 1/3;
     list-style: none;
@@ -37,7 +42,8 @@ nav a {
 }
 
 nav a:hover {
-    color: white
+    color: rgb(0, 0, 0);
+    background-color: rgb(193, 210, 137);
 }
 
 main {
@@ -51,10 +57,16 @@ main {
 
 .card {
     margin: 0.75rem;
-    border: 1px solid black;
+    border: 1.5px solid rgb(0, 0, 0);
     border-radius: 20px;
-    background-color: rgb(234, 236, 233);
+    background-color: rgb(221, 223, 217);
 }
+
+li {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
 
 p {
     text-align: justify;
@@ -63,13 +75,16 @@ p {
     margin-right: 20px;
 }
 
+.about-me p {
+    margin-top: 20px;
+}
+
 .about-me img {
     float: right;
     padding: 1rem;
     margin-right: 30px;
     margin-left: 20px;
 }
-
 
 .country img {
     float: left;
@@ -99,8 +114,8 @@ h2 {
     text-align: center;
     background-color: rgb(109, 136, 91);
     padding: 0.75rem;
-    border-top-left-radius: 19px;
-    border-top-right-radius: 19px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
 }
 
 h3 {
