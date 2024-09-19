@@ -112,6 +112,7 @@ p {
 .country img {
     float: left;
     padding: 1rem;
+    padding-top: 0.5rem;
     margin-left: 25px;
     padding-bottom: 3px;
     transition: transform 0.3s ease;
