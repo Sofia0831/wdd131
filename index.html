@@ -7,6 +7,12 @@
     <meta name="description" content="Sofia Florylle S. Pantas WDD 131 Home Page">
     <meta name="author" content="Sofia Florylle S. Pantas">
     <link rel="stylesheet" href="styles/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+10+Charted&family=Pixelify+Sans:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <script defer src="scripts/getdate.js"></script>
 </head>
 
 <body>
@@ -15,9 +21,9 @@
             <h1>WDD 131: Web Dynamic Fundamentals - <span>Sofia Florylle S. Pantas</span></h1>
 
             <nav class="navigation modern">
-                <a href="https://www.linkedin.com/in/sf-pantas/">LinkedIn</a>
-                <a href="https://byui.instructure.com/">I-Learn</a>
-                <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/13?lang=eng&id=p34-p35#p34">Scripture</a>
+                <a href="https://www.linkedin.com/in/sf-pantas/" target="_blank">LinkedIn</a>
+                <a href="https://byui.instructure.com/" target="_blank">I-Learn</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/13?lang=eng&id=p34-p35#p34" target="_blank">Scripture</a>
                 <a href="#">Final Project</a>
             </nav>
             
@@ -30,7 +36,7 @@
                     <img src="images/me.jpg" alt="Sofia Florylle Pantas" width="150">
 
                     <p>
-                        Hello! I am Sofia Florylle S. Pantas, 21 years old, hailing from a 
+                        Hello! I am <span class="name"> Sofia Florylle S. Pantas</span>, 21 years old, hailing from a 
                         small province named Biliran from the Islands of the Philippines. I 
                         like to do a lot of things, so I tend to accrue a diverse list of 
                         hobbies such as drawing, photography, singing, reading, playing video games, playing
@@ -40,7 +46,7 @@
                     </p>
                 </div>
 
-                <h3>Naval, Biliran</h3>
+                <h3>Naval, Biliran, Philippines</h3>
                 <div class="country">
                     <figure>
                         <img src="images/phflag.png" alt="Philippine Flag" width="230">
@@ -57,18 +63,19 @@
             <section class="card">
                 <h2>Web Dev Resources</h2>
                 <ul>
-                    <li><a href="#">W3 Schools</a></li>
-                    <li><a href="#">Site</a></li>
-                    <li><a href="#">Site</a></li>
-                    <li><a href="#">Site</a></li>
+                    <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
                 </ul>   
             </section>
         </main>     
           
         <footer>
             <p>
-                ©️2024 🎭 Sofia Florylle S. Pantas 🎭 Philippines
+                &copy;<span id="currentyear"></span> 🎭 Sofia Florylle S. Pantas 🎭 Philippines
             </p>
+            <p id="lastModified"></p>
         </footer>
 
     </div>

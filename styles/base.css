@@ -17,11 +17,13 @@ header {
 
 header h1 {
     padding: 1rem;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 50px;
 }
 
 header span {
     color: rgb(209, 213, 133);
-    font-size: 25px;
+    font-size: 35px;
 }
 
 nav {
@@ -39,11 +41,15 @@ nav a {
     background-color: black; 
     flex: 1 1 100%;
     text-align: center;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 700;
+
 }
 
 nav a:hover {
     color: rgb(0, 0, 0);
     background-color: rgb(193, 210, 137);
+    font-size: 20px;
 }
 
 main {
@@ -73,10 +79,26 @@ p {
     padding: 2rem;
     margin-left: 20px;
     margin-right: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 .about-me p {
     margin-top: 20px;
+}
+
+.name {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 600;
+    font-size: large;
+    color: rgb(40, 96, 37);
+    transition: transform 0.3 ease;
+}
+
+.name:hover {
+    color: rgb(152, 181, 87);
+    font-size: 20px;
+    transition: font-size 0.1s ease;
 }
 
 .about-me img {
@@ -84,17 +106,25 @@ p {
     padding: 1rem;
     margin-right: 30px;
     margin-left: 20px;
+    transition: transform 0.3s ease;
 }
 
 .country img {
     float: left;
     padding: 1rem;
+    margin-top: 5px;
     margin-left: 25px;
     padding-bottom: 3px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
 }
 
 .country p {
     padding-top: 0.75rem;
+
 }
 
 figure {
@@ -116,6 +146,12 @@ h2 {
     padding: 0.75rem;
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
+    font-family: 'Jersey 10', sans-serif;
+    font-size: 30px;
+}
+
+h2:hover {
+    color: rgb(212, 234, 175);
 }
 
 h3 {
@@ -124,8 +160,34 @@ h3 {
     margin : auto;
     margin-top: 30px;
     border-bottom : 1px solid gray;
+    font-family: 'Jersey 10', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgb(57, 86, 48);
 
 }
+
+h3:hover {
+    font-size: 27px;
+    transition: font-size 0.1s ease;
+}
+
+.card ul {
+    display : flex;
+    flex-direction : column;
+    row-gap : 0.5rem;
+    padding : 2rem;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: rgb(152, 181, 87);
+    font-size: 20px;
+}
+
 footer {
     background-color: rgb(55, 78, 37);
     color: rgb(230, 230, 230);
@@ -133,6 +195,15 @@ footer {
 
 footer p {
     text-align: center;
+    font-family: 'Pixelify Sans', sans-serif;
     text-decoration: none;
+    padding: 1.5rem;
+    padding-bottom: 0;
+}
 
+#lastModified {
+    font-size : smaller;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    
 }
