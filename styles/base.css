@@ -92,7 +92,6 @@ p {
     font-weight: 600;
     font-size: large;
     color: rgb(40, 96, 37);
-    transition: transform 0.3 ease;
 }
 
 .name:hover {
