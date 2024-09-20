@@ -151,10 +151,6 @@ h2 {
     font-size: 30px;
 }
 
-h2:hover {
-    color: rgb(209, 213, 133);
-}
-
 h3 {
     text-align: center;
     width : 75%;
