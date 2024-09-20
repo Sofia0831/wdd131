@@ -102,6 +102,8 @@ p {
 }
 
 .about-me img {
+    width: 150px;
+    height: 166px;
     float: right;
     padding: 1rem;
     margin-right: 30px;
@@ -110,6 +112,8 @@ p {
 }
 
 .country img {
+    width: 200px;
+    height: 115px;
     float: left;
     padding: 1rem;
     padding-top: 0;
