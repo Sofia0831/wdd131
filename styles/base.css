@@ -97,8 +97,7 @@ p {
 
 .name:hover {
     color: rgb(152, 181, 87);
-    font-size: 20px;
-    transition: font-size 0.1s ease;
+
 }
 
 .about-me img {
@@ -112,7 +111,7 @@ p {
 }
 
 .country img {
-    width: 200px;
+    width: 230px;
     height: 115px;
     float: left;
     padding: 1rem;
@@ -174,8 +173,7 @@ h3 {
 }
 
 h3:hover {
-    font-size: 27px;
-    transition: font-size 0.1s ease;
+    color: rgb(152, 181, 87);
 }
 
 .card ul {
