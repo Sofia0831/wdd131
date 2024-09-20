@@ -80,7 +80,7 @@ p {
     margin-left: 20px;
     margin-right: 20px;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
 
 }
 
@@ -193,14 +193,14 @@ footer {
 footer p {
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     padding: 1.5rem;
     padding-bottom: 0;
 }
 
 #lastModified {
-    font-size : 18px;
+    font-size : 13px;
     padding: 1rem;
     padding-top: 0.5rem;
     color: rgb(209, 213, 133);
