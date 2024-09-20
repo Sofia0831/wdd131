@@ -192,17 +192,15 @@ footer {
 
 footer p {
     text-align: center;
-    font-family: 'Jersey 10', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
     text-decoration: none;
     padding: 1.5rem;
     padding-bottom: 0;
 }
 
 #lastModified {
-    font-size : large;
-    font-weight: 500;
+    font-size : smaller;
     padding: 1rem;
     padding-top: 0.5rem;
     color: rgb(209, 213, 133);
