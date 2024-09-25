@@ -1,6 +1,6 @@
-const input = document.querySelector(#fav-chmps);
-const button = document.querySelector();
-const  = document.querySelector();
+const input = document.querySelector("#favchap");
+const button = document.querySelector('button');
+const list = document.querySelector("#list");
 
 const li = document.createElement("li");
 
@@ -8,6 +8,8 @@ const deleteButton = document.createElement("button")
 
 li.textContent = input.value;
 
-deleteButton. textContent = "X";
+deleteButton.textContent = "X";
 
-li.append(deleteButton)
+li.append(deleteButton);
+
+list.append(li);
