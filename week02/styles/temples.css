@@ -6,24 +6,18 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(233, 233, 233);
 
 }
 
-header, main, footer {
-    max-width: 640px;
-    margin: 1rem auto;
-    background-color: rgb(159, 178, 117);
-
-}
-
-header {
-    display: grid;
-    grid-gap: 1rem;
+header, footer {
+    background-color: rgb(55, 78, 37);
     padding: 1rem;
 
 }
 
 h1 {
+    color: rgb(230, 230, 230);
 	text-align: left;
     padding: 1rem;
     font-size: 25px;
@@ -32,12 +26,12 @@ h1 {
 nav {
     display: flex;
     flex-direction: column;
-    background-color: rgb(41, 41, 41);
 }
 
 nav a {
 	display: block;
 	color: #fff;
+    background-color: black;
 	text-align: center;
 	padding: 1rem;
 	text-decoration: none;
@@ -50,14 +44,19 @@ nav a:hover {
 }
 
 main {
-    background-color: rgb(255, 255, 255);
+    max-width: 840px;
     margin: 0 auto;
 
 }
 
+figcaption {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 h2 {
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .container {
@@ -69,9 +68,10 @@ h2 {
 
 footer {
     text-align: center;
-    padding: 1rem;
+    color: #fff;
+
 }
 
-.active::before {
-    content: "🎭 ";
+.active {
+    color: rgb(172, 195, 123);
 }

@@ -1,4 +1,4 @@
-@media (min-width: 640px) {
+@media (min-width: 840px) {
 	header {
 		display: flex;
 		align-items: center;
@@ -6,10 +6,25 @@
 	}
 
 	nav {
-		justify-content: flex-end;
-		flex-direction: row;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
 	}
 	nav a {
 		flex: 1 1 100%;
+        padding-left: 40px;
+        padding-right: 40px;
 	}
 }
+
+.container {
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: 25px;place-items: center;
+
+}
+
+img { 
+    width: 100%; 
+    height: auto;
+     margin: .5rem;}
