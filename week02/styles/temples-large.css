@@ -4,17 +4,27 @@
 		align-items: center;
 		justify-content: space-between;
 	}
+  
+  #menu {
+		display: none;
+	}
 
-	nav {
+	.navigation {
         display: flex;
         flex-direction: row;
         align-items: flex-end;
 	}
-	nav a {
+	.navigation a {
+        display: block;
 		flex: 1 1 100%;
         padding-left: 40px;
         padding-right: 40px;
 	}
+    
+}
+
+.active {
+    color: rgb(255, 255, 0);
 }
 
 .container {
@@ -27,4 +37,4 @@
 img { 
     width: 100%; 
     height: auto;
-     margin: .5rem;}
+    margin: .5rem;}
