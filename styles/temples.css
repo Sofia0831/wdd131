@@ -43,13 +43,6 @@ h2 {
     padding: 2rem;
 }
 
-.container {
-    display:grid; 
-    grid-template-columns: 1fr; 
-    grid-gap: 25px;
-    place-items: center;
-}
-
 footer {
     text-align: center;
     color: #fff;
