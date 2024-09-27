@@ -33,7 +33,7 @@ main {
 .container {
     display:grid; 
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    grid-gap: 25px;
+    grid-gap: 35px;
     place-items: center;
 
 }
