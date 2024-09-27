@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 45px;
+    color: rgb(230, 230, 230);
+	text-align: left;
+    padding: 0.5rem;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: rgb(233, 233, 233);
@@ -16,12 +24,6 @@ header, footer {
 
 }
 
-h1 {
-    color: rgb(230, 230, 230);
-	text-align: left;
-    padding: 1rem;
-    font-size: 25px;
-}
 
 main {
     max-width: 840px;
@@ -35,6 +37,8 @@ figcaption {
 }
 
 h2 {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 40px;
     text-align: center;
     padding: 2rem;
 }
@@ -53,9 +57,11 @@ footer {
 
 }
 
+
 #lastModified {
     font-size: smaller;
     margin-top: 0.3rem;
+    color: rgb(209, 213, 133);
 }
 
 #menu::before {
@@ -85,9 +91,8 @@ footer {
 }
 
 .navigation a:hover {
-    text-decoration: none;
     color: rgb(0, 0, 0);
-    background-color: rgb(175, 175, 175);
+    background-color: rgb(193, 210, 137);
 }
 
 #menu {
@@ -96,7 +101,7 @@ footer {
 	background: none;
 	color: #000;
 	position: absolute;
-	top: 1.8rem;
+	top: 2rem;
 	right: 1rem;
 }
 
@@ -106,6 +111,8 @@ footer {
 }
 
 .active::before{
-    content: "✨";
+    content: "♥️";
     font-size: 16px;
+    color: rgb(146, 20, 163);
+    letter-spacing: 5px;
 }
