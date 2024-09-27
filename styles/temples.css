@@ -87,6 +87,7 @@ footer {
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
+    font-size: 20px;
     background-color: black;
 }
 
@@ -101,7 +102,7 @@ footer {
 	background: none;
 	color: #000;
 	position: absolute;
-	top: 2rem;
+	top: 2.4rem;
 	right: 1rem;
 }
 
@@ -112,7 +113,7 @@ footer {
 
 .active::before{
     content: "♥️";
-    font-size: 16px;
+    font-size: 20px;
     color: rgb(146, 20, 163);
     letter-spacing: 5px;
 }
