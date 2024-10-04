@@ -67,6 +67,22 @@ dd {
 }
 
 
+footer {
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 0;
+    color: #fff;
+    padding: 1rem;
+}
+
+#lastModified {
+    text-align: center;
+    font-size : 13px;
+    padding-top: 0.5rem;
+
+    
+}
+
 @media screen and (min-width: 1000px) {
 
     h2 {
@@ -110,8 +126,3 @@ dd {
 }
 
 
-footer {
-    text-align: center;
-    color: #fff;
-    padding: 1rem;
-}
