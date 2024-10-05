@@ -7,10 +7,12 @@
 :root {
     --heading-font: "Jersey 10", sans-serif; 
     --color: white;
+    --text-font: 'Roboto', sans-serif;
 }
 
 body {
     background-color: var(--color);
+    font-family: var(--text-font);
 }
 
 header, footer {
@@ -79,7 +81,7 @@ footer {
     text-align: center;
     text-decoration: none;
     padding-bottom: 0;
-    color: #fff;
+    color: var(--color);
     padding: 1rem;
 }
 
