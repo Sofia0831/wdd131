@@ -7,35 +7,35 @@ footerParagraphs[0].textContent = `©️ ${currentYear} ⭐ Sofia Florylle S. Pa
 footerParagraphs[1].textContent = `Last modified: ${lastModifiedDate}`;
 
 
-function calculateWindChill(temperature, windSpeed, units) {
-    if (isNaN(temperature) || isNaN(windSpeed) || !units) {
-      return "N/A";
+function calculateWindChill(temperature, windSpeed, units) 
+{
+  if (units == "C") 
+    if (temperature <= 10 && windSpeed >= 4.8)
+    {
+      return 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
     }
-
-    let formula = units === "metric" ? "metric" : "imperial";
-
-    if ((formula === "metric" && temperature <= 10 && windSpeed > 4.8) ||
-        (formula === "imperial" && temperature <= 50 && windSpeed > 3)) {
-  
-
-      if (formula === "metric") {
-        return 13.12 + 0.6215 * temperature * (0.3965 * temperature - 11.37) * Math.pow(windSpeed, 0.16);
-      } else {
-        return 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16);
-      }
-    } else {
-      return "N/A";   
-  
+    else {
+      return "N/A"
+    }
+  else if (tempUnit == "F")
+  {
+    if (temperature <=50 && windSpeed > 3)
+    {
+      return 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16);
+    }
+    else 
+    {
+      return "N/A"
     }
   }
+  
+}  
 
 
-  let temperatureCelsius = 27;
-  let windSpeedKmPerHour = 6.4;
-  
-  // Calculate wind chill
-  let windChill = calculateWindChill(temperatureCelsius, windSpeedKmPerHour);
-  
-  // Display the wind chill in the "Weather" section
-  let weatherSection = document.getElementById("windChill");
-  weatherSection.innerHTML = `${windChill}`;
+let temperatureCelsius = 27;
+let windSpeedKmPerHour = 6.8;
+let tempUnit = "C";
+
+let windChill = calculateWindChill(temperatureCelsius, windSpeedKmPerHour, tempUnit);
+let weatherSection = document.getElementById("windChill");
+weatherSection.innerHTML = Math.round(windChill);
