@@ -4,9 +4,13 @@
     box-sizing: border-box;
 }
 
+:root {
+    --heading-font: "Jersey 10", sans-serif; 
+    --color: white;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--color);
 }
 
 header, footer {
@@ -15,9 +19,11 @@ header, footer {
 }
 
 h1 {
-    color: rgb(230, 230, 230);
+    color: var(--color);
+    font-family: var(--heading-font);
+    font-size: 60px;
 	text-align: center;
-    padding: 0.5rem;
+    padding: 0.3rem;
 }
 
 .hero {
@@ -30,6 +36,8 @@ h1 {
 }
 
 h2 {
+    font-family: var(--heading-font);
+    font-size: 40px;
     padding: 1rem;
     color: rgb(97, 87, 2);
     text-align: center;
@@ -58,7 +66,7 @@ dt {
     padding-right: 0.5rem;
 }
 
-dt:after {
+dt::after {
     content: ':';
   }
 
@@ -93,7 +101,7 @@ footer {
         top: 40px;
         padding: 1rem;
         padding-left: 2.3rem;
-        width: 200px;
+        width: 250px;
         text-align: left;
     }
     
@@ -114,13 +122,13 @@ footer {
     .weather {
         position: absolute;
         right: 1px;
-        top: 450px;
+        top: 650px;
     }
     
     .weather img {
         position: absolute;
-        bottom: 169px;
-        right: 163px;
+        bottom: 159px;
+        right: 145px;
     }
 
 }
