@@ -72,12 +72,62 @@ const temples = [
 	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
 	},
 	// Add more temple objects here...
+	{
+		templeName: "Manila Philippines",
+		location: "Manila, Philippines",
+		dedicated: "1984, September, 25",
+		area: 26683,
+		imageUrl: 
+		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manila-philippines/400x250/manila-philippines-temple-lds-129585-wallpaper.jpg"
+	},
+	{
+		templeName: "Sapporo Japan",
+		location: "Sapporo, Japan",
+		dedicated: "2016, August, 21",
+		area: 48480,
+		imageUrl: 
+		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sapporo-japan/400x250/sapporo-japan-exterior-night-1945721.jpg"
+	},
+	{
+		templeName: "Fukuoka Japan",
+		location: "Fukuoka, Japan",
+		dedicated: "2000, November 11",
+		area: 10700,
+		imageUrl: 
+		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/fukuoka-japan/400x250/fukuoka-japan-temple-lds-306863-wallpaper.jpg"
+	}
   ];
 
 createTempleCard(temples);
 
-function createTempleCard() {
-	temples.forEach(temple => {
+const homeLink = document.querySelector("#home");
+homeLink.addEventListener("click", () => {
+	createTempleCard(temples);
+});
+
+const oldLink = document.querySelector("#old");
+oldLink.addEventListener("click", () => {
+	createTempleCard(temples.filter(temple => !temple.dedicated.includes("2005") && !temple.dedicated.includes("2015") && !temple.dedicated.includes("2020")));
+});
+
+const newLink = document.querySelector("#new");
+newLink.addEventListener("click", () => {
+	createTempleCard(temples.filter(temple => temple.dedicated.includes("2005") || temple.dedicated.includes("2015") || temple.dedicated.includes("2020") || temple.dedicated.includes("2000") || temple.dedicated.includes("2016")));
+});
+
+const largeLink = document.querySelector("#large");
+largeLink.addEventListener("click", () => {
+	createTempleCard(temples.filter(temple => temple.area >= 90000));
+});
+
+const smallLink = document.querySelector("#small");
+smallLink.addEventListener("click", () => {
+	createTempleCard(temples.filter(temple => temple.area <= 10000));
+});
+
+function createTempleCard(filteredTemples) {
+	document.querySelector(".container").innerHTML = "";
+	filteredTemples.forEach(temple => {
 		let card = document.createElement("section");
 		card.className = "temple-card";
 		let name = document.createElement("h3");
