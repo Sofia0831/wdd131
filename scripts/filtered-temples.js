@@ -107,7 +107,7 @@ homeLink.addEventListener("click", () => {
 
 const oldLink = document.querySelector("#old");
 oldLink.addEventListener("click", () => {
-	createTempleCard(temples.filter(temple => !temple.dedicated.match(/\d{4}/g).some(year => parseInt(year) >= 2000)));
+	createTempleCard(temples.filter(temple => temple.dedicated.match(/\d{4}/g).some(year => parseInt(year) < 2000)));
 });
 
 const newLink = document.querySelector("#new");
