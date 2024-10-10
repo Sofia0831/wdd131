@@ -107,12 +107,12 @@ homeLink.addEventListener("click", () => {
 
 const oldLink = document.querySelector("#old");
 oldLink.addEventListener("click", () => {
-	createTempleCard(temples.filter(temple => !temple.dedicated.includes("2005") && !temple.dedicated.includes("2015") && !temple.dedicated.includes("2020") && !temple.dedicated.includes("2000") && !temple.dedicated.includes("2016")));
+	createTempleCard(temples.filter(temple => !temple.dedicated.match(/\d{4}/g).some(year => parseInt(year) >= 2000)));
 });
 
 const newLink = document.querySelector("#new");
 newLink.addEventListener("click", () => {
-	createTempleCard(temples.filter(temple => temple.dedicated.includes("2005") || temple.dedicated.includes("2015") || temple.dedicated.includes("2020") || temple.dedicated.includes("2000") || temple.dedicated.includes("2016")));
+	createTempleCard(temples.filter(temple => temple.dedicated.match(/\d{4}/g).some(year => parseInt(year) >= 2000)));
 });
 
 const largeLink = document.querySelector("#large");
