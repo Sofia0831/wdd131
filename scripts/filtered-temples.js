@@ -107,7 +107,7 @@ homeLink.addEventListener("click", () => {
 
 const oldLink = document.querySelector("#old");
 oldLink.addEventListener("click", () => {
-	createTempleCard(temples.filter(temple => !temple.dedicated.includes("2005") && !temple.dedicated.includes("2015") && !temple.dedicated.includes("2020")));
+	createTempleCard(temples.filter(temple => !temple.dedicated.includes("2005") && !temple.dedicated.includes("2015") && !temple.dedicated.includes("2020") && !temple.dedicated.includes("2000") && !temple.dedicated.includes("2016")));
 });
 
 const newLink = document.querySelector("#new");
