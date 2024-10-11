@@ -100,28 +100,35 @@ const temples = [
 
 createTempleCard(temples);
 
+const h2Text = document.querySelector("h2");
+
 const homeLink = document.querySelector("#home");
 homeLink.addEventListener("click", () => {
+	h2Text.textContent = "Home";
 	createTempleCard(temples);
 });
 
 const oldLink = document.querySelector("#old");
 oldLink.addEventListener("click", () => {
+	h2Text.textContent = "Old";
 	createTempleCard(temples.filter(temple => temple.dedicated.match(/\d{4}/g).some(year => parseInt(year) < 2000)));
 });
 
 const newLink = document.querySelector("#new");
 newLink.addEventListener("click", () => {
+	h2Text.textContent = "Newer";
 	createTempleCard(temples.filter(temple => temple.dedicated.match(/\d{4}/g).some(year => parseInt(year) >= 2000)));
 });
 
 const largeLink = document.querySelector("#large");
 largeLink.addEventListener("click", () => {
+	h2Text.textContent = "Large"
 	createTempleCard(temples.filter(temple => temple.area >= 90000));
 });
 
 const smallLink = document.querySelector("#small");
 smallLink.addEventListener("click", () => {
+	h2Text.textContent = "Small"
 	createTempleCard(temples.filter(temple => temple.area <= 10000));
 });
 
