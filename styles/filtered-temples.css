@@ -51,12 +51,11 @@ img {
 
 
 .label {
-    font-family: "Roboto Condensed", sans-serif;
     font-weight: bold;
 }
 
 .temple-card{
-    text-align: center;
+    text-align: left;
     background-color: rgb(193, 193, 193);
     padding: 20px;
     margin: 20px;
