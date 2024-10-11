@@ -116,7 +116,7 @@ oldLink.addEventListener("click", () => {
 
 const newLink = document.querySelector("#new");
 newLink.addEventListener("click", () => {
-	h2Text.textContent = "Newer";
+	h2Text.textContent = "New";
 	createTempleCard(temples.filter(temple => temple.dedicated.match(/\d{4}/g).some(year => parseInt(year) >= 2000)));
 });
 
