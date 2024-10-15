@@ -61,20 +61,20 @@ main {
 }
 
 .wf1 legend {
-    color: blue;
+    color: rgb(60, 60, 163);
     padding: 0 .5rem;
 }
 
 .wf1 label {
     display: block;
     padding-top: 1rem;
-    color: red;
+    color: rgb(168, 44, 44);
     font-size: .9rem;
 }
 
 .wf1 div {
     padding-top: 1rem;
-    color: blue;
+    color: rgb(60, 60, 163);
     font-size: .9rem;
 }
 
