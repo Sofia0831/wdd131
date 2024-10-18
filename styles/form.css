@@ -145,14 +145,6 @@ input[type="radio"]
 	content: "\2605";
 }
 
-input:required {
-    border-right: solid 8px rgb(110, 31, 31);
-}
-
-input:required:valid {
-    border-right: solid 8px var(--main-color);
-}
-
 
 .thank-you 
     {
