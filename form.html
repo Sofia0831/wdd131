@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Sofia Florylle Pantas|WDD 131|Week 5 Assignment: Product Review Form">
+    <meta name="author" content="Sofia Florylle S. Pantas">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <script defer src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html"></form>
+        <fieldset class="center">
+            <label>Product Name
+                <select name="product" id="product" required>
+                    <option value="" disabled selected>Choose a Product...</option>
+                </select>
+            </label>
+
+            <label>Overall Rating</label>
+            <div class="stars">
+                <input type="radio" name="stars" id="fivestar" value="5" required><label for="fivestar"></label>
+                <input type="radio" name="stars" id="fourstar" value="4" required><label for="fourstar"></label>
+                <input type="radio" name="stars" id="threestar" value="3" required><label for="threestar"></label>
+                <input type="radio" name="stars" id="twostar" value="2" required><label for="twostar"></label>
+                <input type="radio" name="stars" id="onestar" value="1" required><label for="onestar"></label>
+            </div>
+
+
+            <label>Date of Installation <input type="date" name="install-date" id="install-date" required></label>
+
+            <div class="features">Which features did you find useful in the product?<br>
+                <span class="italic">(Check all that apply)</span>
+            </div>
+            <label class="check"><input type="checkbox" name="durability" id="yes">Durability</label>
+            <label class="check"><input type="checkbox" name="ease" id="yes">Ease of Use</label>
+            <label class="check"><input type="checkbox" name="performance" id="yes">Performance</label>
+            <label class="check"><input type="checkbox" name="design" id="yes">Design</label>
+
+            <label>Written Review <span class="optional">(Optional)</span></label>
+            <textarea id="review" name="review" rows="5" placeholder="Answer"></textarea>
+
+            <label>Your Name <span class="optional">(Optional)</span></label>
+            <input type="text" name="username" id="username">
+
+            <input type="submit" value="POST REVIEW">
+
+        </fieldset>
+    </main>
+
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span> 🎭 Sofia Florylle S. Pantas 🎭 Philippines
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+@media (min-width: 500px)
+{
+    main
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    fieldset 
+    {
+        padding: 1.5rem 5rem 3rem 5rem;
+    }
+
+
+
+}
