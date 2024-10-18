@@ -46,3 +46,8 @@ products.forEach(product => {
   productSelect.appendChild(option);
 
 });
+
+
+let reviewCounter = parseInt(localStorage.getItem('reviewCounter')) || 0;
+reviewCounter++;
+localStorage.setItem('reviewCounter', reviewCounter);
