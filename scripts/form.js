@@ -35,3 +35,14 @@ const products = [
       averagerating: 5.0
     }
   ];
+
+const productSelect = document.getElementById("product");
+
+products.forEach(product => {
+  const option = document.createElement("option");
+  option.value = product.id;
+  const capitalizedName = product.name.replace(/(^\w|\s\w)/g, match => match.toUpperCase());
+  option.text = capitalizedName;
+  productSelect.appendChild(option);
+
+});
