@@ -145,6 +145,10 @@ input[type="radio"]
 	content: "\2605";
 }
 
+.indicator 
+{
+ color: rgb(110, 31, 31);
+}
 
 .thank-you 
     {
