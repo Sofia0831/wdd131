@@ -18,6 +18,10 @@ body
     font-family: var(--body);
 }
 
+main {
+    min-height: 20rem;
+}
+
 header 
 {
     background-color: var(--main-color);
@@ -139,6 +143,19 @@ input[type="radio"]
 
 .stars input:checked ~ label::before {
 	content: "\2605";
+}
+
+
+.thank-you 
+    {
+        display: block;
+        padding: 5rem;
+        text-align: center;
+        
+    }
+.thank-you h1 
+{
+    padding: 1rem;
 }
 
 
