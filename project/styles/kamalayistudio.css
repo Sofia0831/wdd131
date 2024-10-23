@@ -61,6 +61,23 @@ h2 {
     transform: scale(1.2);
 }
 
+
+.socials {
+    transform: translateY(100%);
+    animation: slideUp 1s ease-in-out;
+    opacity: 0;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
 #menu::before {
 	content: "☰";
     color: #fff;
