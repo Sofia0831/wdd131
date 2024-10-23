@@ -44,6 +44,7 @@ main {
 
 h1 {
     font-size: 50px;
+    padding-left: 1.5rem;
 }
 
 h2 {
@@ -112,7 +113,7 @@ h2 {
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
-    font-size: 20px;
+    font-size: 30px;
     border: 1px solid #E5E5E5;
 }
 
@@ -122,12 +123,12 @@ h2 {
 }
 
 #menu {
-	font-size: 1.5rem;
+	font-size: 2rem;
 	border: 0;
 	background: none;
 	color: #000;
 	position: absolute;
-	top: 1.15rem;
+	top: 1.49rem;
 	right: 1rem;
 }
 
