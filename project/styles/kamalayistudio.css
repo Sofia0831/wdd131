@@ -57,6 +57,9 @@ h2 {
     padding: 0.2rem;
 }
 
+.socials a:hover img {
+    transform: scale(1.2);
+}
 
 #menu::before {
 	content: "☰";
@@ -109,8 +112,10 @@ h2 {
 
 footer p {
     text-align: center;
+    padding: 0.5rem;
 }
 
 #lastModified {
     font-size: 15px;
+    padding-top: 0;
 }
