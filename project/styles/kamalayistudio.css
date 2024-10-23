@@ -66,17 +66,22 @@ h2 {
     transform: translateY(100%);
     animation: slideUp 1s ease-in-out;
     opacity: 0;
+}
+
+.socials.slide-in {
+    transform: translateY(0);
+    opacity: 1;
   }
   
-  @keyframes slideUp {
-    from {
-      transform: translateY(100%);
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
   }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 #menu::before {
 	content: "☰";
