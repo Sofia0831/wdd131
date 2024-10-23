@@ -34,5 +34,9 @@
         max-width: 1400px;
         justify-content: center;    
     }
+
+    .active {
+        background-color: #000;
+    }
     
 }

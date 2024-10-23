@@ -45,6 +45,7 @@ main {
 h1 {
     font-size: 50px;
     padding-left: 1.5rem;
+    font-family: var(--heading-font);
 }
 
 h2 {
@@ -150,3 +151,16 @@ footer p {
     font-size: 19px;
     padding-top: 0;
 }
+
+.active {
+    background-color: var(--primary-color);
+}
+
+
+/* -------------------------- project css --------------------------------*/
+
+.project-heading {
+    text-align: center;
+    padding: 1rem;
+}
+
