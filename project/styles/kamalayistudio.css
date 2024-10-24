@@ -157,12 +157,17 @@ footer p {
 .g-navigation a {
     font-family: var(--heading-font);
     background-color: var(--accent1-color);
-	padding: 1rem;
+	padding: 1rem 6.6rem 1rem 6.56rem;
 	text-align: center;
 	text-decoration: none;
 	color: var(--secondary-color);
     font-size: 30px;
     border: 1px solid rgb(185, 184, 184);
+}
+
+.g-navigation a:hover {
+    color: var(--secondary-color);
+    background-color: var(--accent2-color);
 }
 
 

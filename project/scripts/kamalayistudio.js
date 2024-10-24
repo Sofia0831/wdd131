@@ -54,6 +54,15 @@ const projects = [
 
 	},
 	{
+		projectName: "Birthday Collab 1",
+		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298881827674652692/miko_bday_icon.jpg?ex=671b2d77&is=6719dbf7&hm=9edf6efeaf4806ce55841c728a7fd225a087311cd6ce58b8b40b9dfb2a542a60&"
+
+	},
+	{
+		projectName: "Birthday Collab 2",
+		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298878811961823252/sofya_bday_icon.jpg?ex=671b2aa8&is=6719d928&hm=1e5f2fa7229889ce3747bb384641fd6f0be29406423c03de73ce84f29fdfa0b1&"
+	},
+	{
 		projectName: "Alina Illustration",
 		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298878812456751124/Alina_2.jpg?ex=671b2aa8&is=6719d928&hm=2c063037b260fcafe1e60103d844bf7c9c24518ce24de3151be7365e208c08d0&"
 
@@ -72,15 +81,6 @@ const projects = [
 		projectName: "DTIYS Illustration 2",
 		imageUrl:"https://cdn.discordapp.com/attachments/1237341719935193118/1298881091687550986/modern_art_lol.jpg?ex=671b2cc8&is=6719db48&hm=6db4a8a143c626f7010e27127ee93ee737c02ccc23321b3bbfdfc1c1053eec05&"
 
-	},
-	{
-		projectName: "Birthday Collab 1",
-		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298881827674652692/miko_bday_icon.jpg?ex=671b2d77&is=6719dbf7&hm=9edf6efeaf4806ce55841c728a7fd225a087311cd6ce58b8b40b9dfb2a542a60&"
-
-	},
-	{
-		projectName: "Birthday Collab 2",
-		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298878811961823252/sofya_bday_icon.jpg?ex=671b2aa8&is=6719d928&hm=1e5f2fa7229889ce3747bb384641fd6f0be29406423c03de73ce84f29fdfa0b1&"
 	}
 ];
 
