@@ -34,6 +34,10 @@ const projects = [
 	{
 		projectName: "Erato Sprite",
 		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298714297807143002/Erato.png?ex=671a9171&is=67193ff1&hm=766fb4a733b7bb888a10ff4ac43726b34ae7f1c586b7e79366cb6acd190f48ff&"
+	},
+	{
+		projectName: "Alina Portrait",
+		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1237341915339423764/Alina_2.png?ex=671ac235&is=671970b5&hm=060b0eb1e8d4c65ac2b6206477860a416be71f407163b34aa788a38715243419&"
 	}
 ];
 
@@ -52,6 +56,8 @@ function createArtCard() {
 		img.setAttribute("src", project.imageUrl);
 		img.setAttribute("alt", `${project.projectName}`);
 		img.setAttribute("loading", "lazy");
+		img.setAttribute("width", "100%")
+		img.setAttribute("height", "100%")
 
 		card.appendChild(name);
 		card.appendChild(img);

@@ -152,22 +152,24 @@ footer p {
 
 
 .project-heading {
+    background-color: rgb(37, 42, 52, 0.85);
+    color: var(--accent1-color);
     text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 0;
+    box-shadow: 4px 8px 8px 10px rgba(0, 0, 0, 0.5);
 }
 
 .art-card{
     max-width: 100%;
-    padding: 1rem;
+    margin-bottom: 20px;
+    margin-top: 30px;
     text-align: center;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3)
 }
 
 .art-card h3 {
-    background-color: rgb(37, 42, 52, 0.85);
+    background-color: var(--background-color);
     padding: 1rem;
     color: var(--accent2-color);
-    /* border-radius: 20px; */
 }
 
 
