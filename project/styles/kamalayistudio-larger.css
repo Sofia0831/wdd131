@@ -44,10 +44,16 @@
     .projectsdiv {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
+        grid-gap: 30px;
         padding: 50px;
 		place-items: center; 
 	}
+
+    .g-navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
     
     
 }
