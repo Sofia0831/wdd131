@@ -131,10 +131,19 @@ footer p {
 }
 
 .profiles-card h3 {
-    font-size: 25px;
+    font-size: 33px;
+    font-family: var(--heading-font);
     padding: 1rem;
     color: var(--accent2-color);
     border-radius: 40px;
+}
+
+h4 {
+    text-align: center;
+    font-family: var(--paragraph-font);
+    padding-top: 1rem;
+    padding-bottom: 0;
+    font-size: 25px;
 }
 
 .profiles-card a:hover img {
