@@ -70,26 +70,13 @@ h2 {
     transform: scale(1.2);
 }
 
-
 .socials {
-    transform: translateY(100%);
-    animation: slideUp 1s ease-in-out;
-    opacity: 0;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1.5s ease-in-out; /* Transition duration and easing */
 }
-
-.socials.slide-in {
-    transform: translateY(0);
-    opacity: 1;
-  }
   
-@keyframes slideUp {
-  from {
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+.socials.visible {
+    opacity: 1; /* Visible */
 }
 
 #menu::before {
@@ -105,7 +92,7 @@ h2 {
 .navigation {
 	display: flex;
 	flex-direction: column;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 .navigation a {
@@ -127,7 +114,6 @@ h2 {
 	font-size: 2rem;
 	border: 0;
 	background: none;
-	color: #000;
 	position: absolute;
 	top: 1.49rem;
 	right: 1rem;
@@ -153,7 +139,7 @@ footer p {
 }
 
 .active {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 
@@ -164,3 +150,10 @@ footer p {
     padding: 1rem;
 }
 
+.art-card{
+    text-align: left;
+    background-color: rgb(193, 193, 193);
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+}

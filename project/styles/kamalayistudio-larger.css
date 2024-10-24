@@ -38,5 +38,12 @@
     .active {
         background-color: #000;
     }
+
+
+    /* --------------------------project css----------------------------- */
+    .projectdiv {
+		grid-template-columns: repeat(3, 1fr); 
+	}
+    
     
 }
