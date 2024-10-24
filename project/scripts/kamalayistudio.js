@@ -25,57 +25,62 @@ footerParagraphs[1].textContent = `Last modified: ${lastModifiedDate}`;
 const projects = [
 	{
 		projectName: "Alina Sprite",
-		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298714298671169681/Alina.png?ex=671a9171&is=67193ff1&hm=0aef646ca223f4a57e7498781fdaef1ca9adb2250272286501578a282593be05&"
+		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298878843213582417/Alina.png?ex=671b2ab0&is=6719d930&hm=5de295261897b5fa1fc2a0c307c55a4cb01ece7b652ee84169fb5be8a5ae10c9&"
+
 	},
 	{
 		projectName: "Haven Sprite",
-		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298714298226315285/Haven.png?ex=671a9171&is=67193ff1&hm=7f0ac0295946e76da5dd4d8c6642d35da8e57d522ea3b17ad1a11eb37c9838c3&"
+		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298878842714193972/Haven.png?ex=671b2ab0&is=6719d930&hm=7c3b9b4b638c8c260b5c1552103669f2459b5cbcfb70f9cb0f95f3e85ea1af85&"
+	
 	},
 	{
 		projectName: "Erato Sprite",
-		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298714297807143002/Erato.png?ex=671a9171&is=67193ff1&hm=766fb4a733b7bb888a10ff4ac43726b34ae7f1c586b7e79366cb6acd190f48ff&"
+		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298878841946902528/Erato.png?ex=671b2aaf&is=6719d92f&hm=ea4bf772415941282e76ae64eab97f216c4d796d49c669d127de525ee22556c4&"
+		
 	},
 	{
 		projectName: "Haven Sketch",
-		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298859003886960692/resize.jpg?ex=671b1836&is=6719c6b6&hm=0a1ff97b79bd256d22b5eeff29623493253b48570e5fc7e2f1bbaaffca9dc2e3&"
+		imageUrl:"https://cdn.discordapp.com/attachments/1237341719935193118/1298878813043953797/resize.jpg?ex=671b2aa9&is=6719d929&hm=3514a078efa3ffb6759d3523c2da5a8d4ee10d534b970b44f3996990cbd385f1&"
 
 	},
 	{
 		projectName: "The Gals Sketch",
-		imageUrl: "https://64.media.tumblr.com/59e03eb8671b072236138e2c1a258034/154f875dc89a93e7-ff/s2048x3072/cfc7a0d3e73d3132695dff88bc039250d3f41c41.jpg"
+		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298878811407913051/tumblr_59e03eb8671b072236138e2c1a258034_25799ed1_1280.jpg?ex=671b2aa8&is=6719d928&hm=b51e33ed1bf22598d76e5bbcbf1759364a7c118c4936752dec4fb98dda66bb55&"
 
 	},
 	{
 		projectName: "Alina Sketch",
-		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298871265376862238/IMG_20241024_124058.jpg?ex=671b23a1&is=6719d221&hm=5d647c7a7104586d1ab44ef0106086e15298cd28d5fe7383367b250d6059a7db&"
-
-	},
-	{
-		projectName: "DTIYS Illustration 1",
-		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298861500206940160/received_3663632743852931.jpg?ex=671b1a89&is=6719c909&hm=5963cd047d516ced47453ee52e6aa44a73450783608f6c6b14b040c004bc2de9&"
-
-	},
-	{
-		projectName: "DTIYS Illustration 2",
-		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298861572696834099/modern_art_lol.png?ex=671b1a9a&is=6719c91a&hm=2c03b89854303666e4aac216da70dba5651aa30d70352809b03a4af18ab5f540&"
+		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298878812217409567/462542697_895471092561697_7151148479145039673_n.jpg?ex=671b2aa8&is=6719d928&hm=ab0778e5811eb26f37d73bb6d0abe4203d394408e0651b6ad9f59cfc5b0cfbdb&"
 
 	},
 	{
 		projectName: "Alina Illustration",
-		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1237341915339423764/Alina_2.png?ex=671ac235&is=671970b5&hm=060b0eb1e8d4c65ac2b6206477860a416be71f407163b34aa788a38715243419&"
+		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298878812456751124/Alina_2.jpg?ex=671b2aa8&is=6719d928&hm=2c063037b260fcafe1e60103d844bf7c9c24518ce24de3151be7365e208c08d0&"
+
 	},
 	{
 		projectName: "Haven and Alina Illustration",
-		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298853337726189588/bestie_portrait.png?ex=671b12ef&is=6719c16f&hm=386c3cc1c52ae1e782faa72c80cd162ab3a094c3006888e3c14d0f8fb4389493&"
+		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298878812674850869/bestie_portrait.jpg?ex=671b2aa8&is=6719d928&hm=02a79a2d4e8eb01d17f47ea98282d3079aed59c45dda3c90e19dbda1a5e9307e&"
+
+	},
+	{
+		projectName: "DTIYS Illustration 1",
+		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298880626283380736/received_3663632743852931.jpg?ex=671b2c59&is=6719dad9&hm=25410bed1522223acf76cc9a815b88dbced5c44852d7bd4dd893ff57b366e26a&"
+
+	},
+	{
+		projectName: "DTIYS Illustration 2",
+		imageUrl:"https://cdn.discordapp.com/attachments/1237341719935193118/1298881091687550986/modern_art_lol.jpg?ex=671b2cc8&is=6719db48&hm=6db4a8a143c626f7010e27127ee93ee737c02ccc23321b3bbfdfc1c1053eec05&"
 
 	},
 	{
 		projectName: "Birthday Collab 1",
-		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298871357458747505/Twinsies.png?ex=671b23b7&is=6719d237&hm=8cd8fde055b950e3c0fb373bfbe1fd60b1d8734c7af0491d08da9677bd7c247d&"
+		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298881827674652692/miko_bday_icon.jpg?ex=671b2d77&is=6719dbf7&hm=9edf6efeaf4806ce55841c728a7fd225a087311cd6ce58b8b40b9dfb2a542a60&"
+
 	},
 	{
 		projectName: "Birthday Collab 2",
-		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298855629045108776/sofya_bday_icon.png?ex=671b1511&is=6719c391&hm=5be384a69493eb5c80d1bdb1abe0d94fe1ac0dbd26a8cbb6315fa4ef6488a7b1&"
+		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298878811961823252/sofya_bday_icon.jpg?ex=671b2aa8&is=6719d928&hm=1e5f2fa7229889ce3747bb384641fd6f0be29406423c03de73ce84f29fdfa0b1&"
 	}
 ];
 
@@ -94,6 +99,8 @@ function createArtCard() {
 		img.setAttribute("src", project.imageUrl);
 		img.setAttribute("alt", `${project.projectName}`);
 		img.setAttribute("loading", "lazy");
+		img.setAttribute("width", "100%");
+		img.setAttribute("height", "auto");
 
 
 		card.appendChild(name);
