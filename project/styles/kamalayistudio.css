@@ -157,7 +157,9 @@ footer p {
 .g-navigation a {
     font-family: var(--heading-font);
     background-color: var(--accent1-color);
-	padding: 1rem 6.6rem 1rem 6.56rem;
+    padding: 1rem;
+	width: 100%;
+    margin: 0;
 	text-align: center;
 	text-decoration: none;
 	color: var(--secondary-color);

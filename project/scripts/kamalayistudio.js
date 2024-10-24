@@ -100,7 +100,7 @@ function createArtCard() {
 		img.setAttribute("alt", `${project.projectName}`);
 		img.setAttribute("loading", "lazy");
 		img.setAttribute("width", "100%");
-		img.setAttribute("height", "auto");
+		img.setAttribute("height", "100%");
 
 
 		card.appendChild(name);
