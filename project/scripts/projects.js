@@ -48,15 +48,27 @@ const projects = [
 
 	},
 	{
-		projectName: "Birthday Collab 1",
+		projectName: "Birthday Collab 1 (puddin)",
 		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298887151341011016/miko_bday_icon.webp?ex=671b326d&is=6719e0ed&hm=367e28bf22ccc5b7337d4d47fd75bf061db35234899343108a73a2c225ff22b7&"
 
 	},
-	{
-		projectName: "Birthday Collab 2",
+    {
+		projectName: "Birthday Collab 2 (puddin)",
 		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298887149768151071/sofya_bday_icon.webp?ex=671b326c&is=6719e0ec&hm=7acffc73c269db506f9ed5cf37a2caf038611e7d701287774f47f4e1adf5a3a9&"
 
 	},
+    {
+        projectName: "Kamila Illustration",
+        imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298887150267269213/364541068_303836472036657_2041021175914363347_n.webp?ex=671b326c&is=6719e0ec&hm=7f72912bdeaf4e6df635132d0b166c02962dd882358575cd75743cb63f6e8c15&"
+    },
+    {
+        projectName: "Birthday Collab 1 (miko)",
+        imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298887151072710678/Twinsies.webp?ex=671b326c&is=6719e0ec&hm=fbc8a015ee9d07cd799eb40c79b7cbc89164c8a132150eff5e2df59756aab3a4&"
+    },
+    {
+        projectName: "Birthday Collab 2 (miko)",
+        imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298951649028739102/rtwins.webp?ex=671b6e7e&is=671a1cfe&hm=2fd7f3cc120dc0081734dcfab3e5650eb8980fb22298d7ec8ca73189f3f57872&"
+    },
 	{
 		projectName: "Alina Illustration",
 		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298887149143457854/Alina_2.webp?ex=671b326c&is=6719e0ec&hm=b01dd75d9a52c50169cbb7b9a4aeb3a9e8b8b3c671171bfb84057b42f312b2d9&"
@@ -79,12 +91,40 @@ const projects = [
 	}
 ];
 
-document.addEventListener('DOMContentLoaded', () => {
-	createArtCard();
-  });
 
-function createArtCard() {
-	projects.forEach(project => {
+createArtCard(projects);
+
+
+const h2Text = document.querySelector("h2");
+
+const homeLink = document.querySelector("#gallery");
+homeLink.addEventListener("click", () => {
+	h2Text.textContent = "Gallery";
+	createArtCard(projects);
+});
+
+const spritesLink = document.querySelector("#sprites");
+spritesLink.addEventListener("click", () => {
+	h2Text.textContent = "Sprites";
+	createArtCard(projects.filter(project => project.projectName.includes("Sprite")));
+});
+
+const illustrationsLink = document.querySelector("#illustrations")
+illustrationsLink.addEventListener("click", () => {
+    h2Text.textContent = "Illustrations";
+    createArtCard(projects.filter(project => project.projectName.includes("Illustration")));
+});
+
+const collabLink = document.querySelector("#collabs")
+collabLink.addEventListener("click", () => {
+    h2Text.textContent = "Collabs";
+    createArtCard(projects.filter(project => project.projectName.includes("Collab")));
+});
+
+
+function createArtCard(filteredProjects) {
+    document.querySelector(".projectsdiv").innerHTML = "";
+	filteredProjects.forEach(project => {
 		let card = document.createElement("section");
 		card.className = "art-card";
 		let name = document.createElement("h3");
