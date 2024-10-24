@@ -37,11 +37,6 @@ main {
 
 }
 
-.banner img {
-    width: 100%;
-    height: auto;
-}
-
 h1 {
     font-size: 50px;
     padding-left: 1.5rem;
@@ -57,30 +52,6 @@ h2 {
 
 h3 {
     font-family: var(--paragraph-font);
-}
-
-.socials {
-    text-align: center;
-    padding: 0.6rem 1rem 1.5rem 1rem;
-
-}
-
-.socials a {
-    text-decoration: none;
-    padding: 0.2rem;
-}
-
-.socials a:hover img {
-    transform: scale(1.2);
-}
-
-.socials {
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out; 
-}
-  
-.socials.visible {
-    opacity: 1;
 }
 
 #menu::before {
@@ -150,3 +121,47 @@ footer p {
     background-color: var(--secondary-color);
 }
 
+
+.g-navigation {
+	display: flex;
+	flex-direction: column;
+}
+
+.g-navigation a {
+    font-family: var(--heading-font);
+    background-color: var(--accent1-color);
+    padding: 1rem;
+	width: 100%;
+    margin: 0;
+	text-align: center;
+	text-decoration: none;
+	color: var(--secondary-color);
+    font-size: 30px;
+    border: 1px solid rgb(185, 184, 184);
+}
+
+.g-navigation a:hover {
+    color: var(--secondary-color);
+    background-color: var(--accent2-color);
+}
+
+
+.project-heading {
+    padding-top: 3rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.art-card{
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3)
+}
+
+.art-card h3 {
+    background-color: var(--background-color);
+    padding: 1rem;
+    color: var(--accent2-color);
+}
