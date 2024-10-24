@@ -186,6 +186,11 @@ footer p {
     color: var(--accent2-color);
 }
 
+.art-card img {
+    aspect-ratio: 3.3 / 4.5;
+    width: 100%;
+}
+
 
 
 
