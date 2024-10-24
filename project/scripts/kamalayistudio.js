@@ -25,13 +25,15 @@ footerParagraphs[1].textContent = `Last modified: ${lastModifiedDate}`;
 const projects = [
 	{
 		projectName: "Alina Sprite",
-		imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
-	  
+		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298714298671169681/Alina.png?ex=671a9171&is=67193ff1&hm=0aef646ca223f4a57e7498781fdaef1ca9adb2250272286501578a282593be05&"
 	},
 	{
-		projectName: "Alina Sprite",
-		imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
-	  
+		projectName: "Haven Sprite",
+		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298714298226315285/Haven.png?ex=671a9171&is=67193ff1&hm=7f0ac0295946e76da5dd4d8c6642d35da8e57d522ea3b17ad1a11eb37c9838c3&"
+	},
+	{
+		projectName: "Erato Sprite",
+		imageUrl: "https://cdn.discordapp.com/attachments/1237341719935193118/1298714297807143002/Erato.png?ex=671a9171&is=67193ff1&hm=766fb4a733b7bb888a10ff4ac43726b34ae7f1c586b7e79366cb6acd190f48ff&"
 	}
 ];
 
