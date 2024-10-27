@@ -163,7 +163,6 @@ puddinImg.addEventListener('click', () => {
 		contact.textContent = "Puddinhead's Carrd";
 		contact.href = "https://sofiapantas.carrd.co/"
 		contact.target = "_blank";
-        contact.style.color = "blue";
         contact.style.textDecoration = "underline";
 
 		const website = document.createElement("p");
@@ -172,7 +171,7 @@ puddinImg.addEventListener('click', () => {
 		puddinInfo.appendChild(website);
 
 		const info = document.createElement("p");
-		info.textContent = "Self-taught digital artist from the Philippines with a love for all things geeky and artsy. Sofia Pantas was born in the small province of Biliran. Growing up, they became fascinated with anime and videogames and this interest led them to begin a hobby in drawing and eventually a dream in becoming an artist and game developer.";
+		info.textContent = "Self-taught digital artist from the Philippines with a love for all things geeky and artsy. Growing up, they became fascinated with anime and videogames and this interest led them to begin a hobby in drawing and eventually a dream in becoming an artist and game developer.";
 		puddinInfo.appendChild(info);
 
 		const galleryTitle = document.createElement("h2");
@@ -184,8 +183,8 @@ puddinImg.addEventListener('click', () => {
 		puddinInfo.appendChild(gallery);
 
 		puddinheadArts.forEach(art => {
-			let puddincard = document.createElement("section");
-			puddincard.className = "profile-art-card";
+			let puddinCard = document.createElement("section");
+			puddinCard.className = "profile-art-card";
 			let artName = document.createElement("h3");
 			let artImg = document.createElement("img");
 			artName.textContent = art.artTitle;
@@ -194,10 +193,10 @@ puddinImg.addEventListener('click', () => {
 			artImg.setAttribute("loading", "lazy");
 			artImg.setAttribute("width", "100%");
 			artImg.setAttribute("height", "100%");
-			puddincard.appendChild(artName);
-			puddincard.appendChild(artImg);
+			puddinCard.appendChild(artName);
+			puddinCard.appendChild(artImg);
 
-			gallery.appendChild(puddincard);
+			gallery.appendChild(puddinCard);
 		});
 
 		document.querySelector("main").appendChild(puddinInfo);
@@ -214,7 +213,7 @@ puddinImg.addEventListener('click', () => {
 
 });
 
-const MikoArts = [
+const mikoArts = [
 	{
 		artTitle: "Alina Sprite",
 		imageUrl: "images/gallery/Alina.webp"
@@ -257,14 +256,95 @@ const MikoArts = [
 	},
 	{
 		artTitle: "Spider Julia",
-		imageUrl: "images/miko/spidejulia.webp"
+		imageUrl: "images/miko/spiderjulia.webp"
 	},
 	{
 		artTitle: "Vi",
 		imageUrl: "images/miko/vi.webp"
 	},
+	{
+		artTitle: "Beret Girl",
+		imageUrl: "images/miko/beret.webp"
+	},
+	{
+		artTitle: "Birthday Collab 1",
+		imageUrl: "images/gallery/ltwins.webp"
+	},
+	{
+		artTitle: "Birthday Collab 2",
+		imageUrl: "images/gallery/rtwins.webp"
+	},
+
 	
-]
+];
+
+let mikoInfoDisplayed = false;
+const mikoImg = document.querySelector("#MikoCappuccino");
+mikoImg.addEventListener('click', () =>{
+	if (!mikoInfoDisplayed)
+	{
+		mikoInfoDisplayed = true;
+
+		const mikoInfo = document.createElement("div");
+		mikoInfo.className = "profile-info";
+
+		const name = document.createElement("h1");
+		name.textContent = "MikoCappuccino";
+		mikoInfo.appendChild(name);
+
+		const contact = document.createElement("a");
+		contact.textContent = "MikoCappuccino's Carrd";
+		contact.href = "https://mikocappuccino.carrd.co/"
+		contact.target = "_blank";
+        contact.style.textDecoration = "underline";
+
+		const website = document.createElement("p");
+		website.textContent = "Website: "
+		website.appendChild(contact);
+		mikoInfo.appendChild(website);
+
+		const info = document.createElement("p");
+		info.textContent = "Art progidy whose love for the movie 'Frozen' pushed them to pursue art during their youth. While initially focusing on semi-realism, they've started branching out towards pixel art.";
+		mikoInfo.appendChild(info);
+
+		const galleryTitle = document.createElement("h2");
+		galleryTitle.textContent = "ArtWork Gallery";
+		mikoInfo.appendChild(galleryTitle);
+
+		const gallery = document.createElement("div");
+		gallery.className = "profile-gallery";
+		mikoInfo.appendChild(gallery);
+
+		mikoArts.forEach(art => {
+			let mikoCard = document.createElement("section");
+			mikoCard.className = "profile-art-card";
+			let artName = document.createElement("h3");
+			let artImg = document.createElement("img");
+			artName.textContent = art.artTitle;
+			artImg.setAttribute("src", art.imageUrl);
+			artImg.setAttribute("alt", `${art.artTitle}`);
+			artImg.setAttribute("loading", "lazy");
+			artImg.setAttribute("width", "100%");
+			artImg.setAttribute("height", "100%");
+			mikoCard.appendChild(artName);
+			mikoCard.appendChild(artImg);
+
+			gallery.appendChild(mikoCard);
+			
+		});
+
+		document.querySelector("main").appendChild(mikoInfo);
+
+		const closeButton = document.createElement("button");
+		closeButton.className = "profile-button"
+        closeButton.textContent = "Close";
+        closeButton.addEventListener('click', () => {
+            mikoInfo.remove();
+            mikoInfoDisplayed = false;
+        });
+        mikoInfo.appendChild(closeButton);
+	}
+});
 
 
 
