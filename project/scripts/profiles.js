@@ -20,12 +20,14 @@ const profiles = [
 	{
 		profileName: "MikoCappuccino",
 		titleName: "Artist Corner",
-		imageUrl: "images/mikosprite.png"
+		imageUrl: "images/mikosprite.png",
+		webLink: "https://mikocappuccino.carrd.co/"
 	},
 	{
 		profileName: "Puddinheadart",
 		titleName:"Computer Room",
-		imageUrl: "images/puddinsprite.png"
+		imageUrl: "images/puddinsprite.png",
+		webLink: "https://sofiapantas.carrd.co/"
 	},
 	{
 		profileName: "Yui",
@@ -34,7 +36,18 @@ const profiles = [
 	}
 ];
 
+
 createProfileCard();
+
+
+const puddinimg = document.querySelector("#Puddinheadart")
+puddinimg.addEventListener('click', () => {
+	originalProfileCards = document.querySelectorAll('.profiles-card');
+
+	document.querySelector(".projectsdiv").innerHTML = "";
+
+
+})
 
 function createProfileCard(){
 	profiles.forEach(profile => {
@@ -79,4 +92,11 @@ function createProfileCard(){
 		document.querySelector(".projectsdiv").appendChild(card);
 	})
 }
+
+const puddinhead = [
+	{
+
+	}
+]
+
 
