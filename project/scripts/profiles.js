@@ -159,9 +159,20 @@ puddinImg.addEventListener('click', () => {
 		name.textContent = "Puddinheadart";
 		puddinInfo.appendChild(name);
 
+		const contact = document.createElement("a");
+		contact.textContent = "Puddinhead's Carrd";
+		contact.href = "https://sofiapantas.carrd.co/"
+		contact.target = "_blank";
+        contact.style.color = "blue";
+        contact.style.textDecoration = "underline";
+
+		const website = document.createElement("p");
+		website.textContent = "Website: "
+		website.appendChild(contact);
+		puddinInfo.appendChild(website);
+
 		const info = document.createElement("p");
-		info.className = "info-paragraph";
-		info.textContent = "Self-taught digital artist from the Philippines with a love for all things geeky and artsy. Sofia Pantas was born in the small province of Biliran. Growing up, they became fascinated with anime and manga and this interest led them to begin a hobby in drawing and eventually a dream in becoming an artist.";
+		info.textContent = "Self-taught digital artist from the Philippines with a love for all things geeky and artsy. Sofia Pantas was born in the small province of Biliran. Growing up, they became fascinated with anime and videogames and this interest led them to begin a hobby in drawing and eventually a dream in becoming an artist and game developer.";
 		puddinInfo.appendChild(info);
 
 		const galleryTitle = document.createElement("h2");
