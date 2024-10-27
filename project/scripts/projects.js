@@ -51,7 +51,7 @@ const projects = [
 	},
     {
         projectName: "Kamila Illustration",
-        imageUrl: "images/gallery/Kamila.webp"
+        imageUrl: "images/gallery/kamila.webp"
 	},
     {
         projectName: "Birthday Collab 3",
@@ -63,7 +63,7 @@ const projects = [
     },
 	{
 		projectName: "Alina Illustration",
-		imageUrl: "images/gallery/alina_2.webp"
+		imageUrl: "images/gallery/Alina_2.webp"
 	},
 	{
 		projectName: "Haven and Alina Illustration",
