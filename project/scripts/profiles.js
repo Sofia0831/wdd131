@@ -145,46 +145,61 @@ const puddinheadArts = [
 	},
 ];
 
+let puddinInfoDisplayed = false;
 const puddinImg = document.querySelector("#Puddinheadart");
 puddinImg.addEventListener('click', () => {
-	const puddinInfo = document.createElement("div");
-	puddinInfo.className = "puddin-info";
+	if (!puddinInfoDisplayed)
+	{
+		puddinInfoDisplayed = true;
 
-	const name = document.createElement("h1");
-	name.textContent = "Puddinheadart";
-	puddinInfo.appendChild(name);
+		const puddinInfo = document.createElement("div");
+		puddinInfo.className = "profile-info";
 
-	const info = document.createElement("p");
-	info.className = "info-pudz";
-	info.textContent = "Self-taught digital artist from the Philippines with a love for all things geeky and artsy. Sofia Pantas was born in the small province of Biliran. Growing up, they became fascinated with anime and manga and this interest led them to begin a hobby in drawing and eventually a dream in becoming an artist.";
-	puddinInfo.appendChild(info);
+		const name = document.createElement("h1");
+		name.textContent = "Puddinheadart";
+		puddinInfo.appendChild(name);
 
-	const galleryTitle = document.createElement("h2");
-	galleryTitle.textContent = "ArtWork Gallery";
-	puddinInfo.appendChild(galleryTitle);
+		const info = document.createElement("p");
+		info.className = "info-paragraph";
+		info.textContent = "Self-taught digital artist from the Philippines with a love for all things geeky and artsy. Sofia Pantas was born in the small province of Biliran. Growing up, they became fascinated with anime and manga and this interest led them to begin a hobby in drawing and eventually a dream in becoming an artist.";
+		puddinInfo.appendChild(info);
 
-	const gallery = document.createElement("div");
-	gallery.className = "puddin-gallery";
-	puddinInfo.appendChild(gallery);
+		const galleryTitle = document.createElement("h2");
+		galleryTitle.textContent = "ArtWork Gallery";
+		puddinInfo.appendChild(galleryTitle);
 
-	puddinheadArts.forEach(art => {
-		let puddincard = document.createElement("section");
-		puddincard.className = "puddin-art-card";
-		let artName = document.createElement("h3");
-		let artImg = document.createElement("img");
-		artName.textContent = art.artTitle;
-		artImg.setAttribute("src", art.imageUrl);
-		artImg.setAttribute("alt", `${art.artTitle}`);
-		artImg.setAttribute("loading", "lazy");
-		artImg.setAttribute("width", "100%");
-		artImg.setAttribute("height", "100%");
-		puddincard.appendChild(artName);
-		puddincard.appendChild(artImg);
+		const gallery = document.createElement("div");
+		gallery.className = "profile-gallery";
+		puddinInfo.appendChild(gallery);
 
-		gallery.appendChild(puddincard);
-	});
+		puddinheadArts.forEach(art => {
+			let puddincard = document.createElement("section");
+			puddincard.className = "profile-art-card";
+			let artName = document.createElement("h3");
+			let artImg = document.createElement("img");
+			artName.textContent = art.artTitle;
+			artImg.setAttribute("src", art.imageUrl);
+			artImg.setAttribute("alt", `${art.artTitle}`);
+			artImg.setAttribute("loading", "lazy");
+			artImg.setAttribute("width", "100%");
+			artImg.setAttribute("height", "100%");
+			puddincard.appendChild(artName);
+			puddincard.appendChild(artImg);
 
-	document.querySelector("main").appendChild(puddinInfo);
+			gallery.appendChild(puddincard);
+		});
+
+		document.querySelector("main").appendChild(puddinInfo);
+
+		const closeButton = document.createElement("button");
+		closeButton.className = "profile-button"
+        closeButton.textContent = "Close";
+        closeButton.addEventListener('click', () => {
+            puddinInfo.remove();
+            puddinInfoDisplayed = false;
+        });
+        puddinInfo.appendChild(closeButton);
+	}
 
 });
 
