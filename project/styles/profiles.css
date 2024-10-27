@@ -170,3 +170,29 @@ h4 {
 .yui {
     background-color: rgb(53, 71, 97);
 }
+
+.puddin-info {
+    padding: 3rem;
+}
+
+.puddin-art-card {
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3)
+}
+
+.puddin-art-card h3 {
+    background-color: var(--background-color);
+    padding: 1rem;
+    color: var(--accent2-color);
+}
+
+.info-pudz {
+    font-size: 20px;
+    font-family: var(--paragraph-font);
+    text-align: justify;
+    padding: 2rem 5rem 2rem 5rem;
+    
+}

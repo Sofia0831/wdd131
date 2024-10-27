@@ -20,14 +20,12 @@ const profiles = [
 	{
 		profileName: "MikoCappuccino",
 		titleName: "Artist Corner",
-		imageUrl: "images/mikosprite.png",
-		webLink: "https://mikocappuccino.carrd.co/"
+		imageUrl: "images/mikosprite.png"
 	},
 	{
 		profileName: "Puddinheadart",
 		titleName:"Computer Room",
-		imageUrl: "images/puddinsprite.png",
-		webLink: "https://sofiapantas.carrd.co/"
+		imageUrl: "images/puddinsprite.png"
 	},
 	{
 		profileName: "Yui",
@@ -39,15 +37,6 @@ const profiles = [
 
 createProfileCard();
 
-
-const puddinimg = document.querySelector("#Puddinheadart")
-puddinimg.addEventListener('click', () => {
-	originalProfileCards = document.querySelectorAll('.profiles-card');
-
-	document.querySelector(".projectsdiv").innerHTML = "";
-
-
-})
 
 function createProfileCard(){
 	profiles.forEach(profile => {
@@ -93,10 +82,132 @@ function createProfileCard(){
 	})
 }
 
-const puddinhead = [
+const puddinheadArts = [
 	{
+		artTitle: "Birthday Collab 1",
+		imageUrl: "images/gallery/abday.webp"
+	},
+    {
+		artTitle: "Birthday Collab 2",
+		imageUrl: "images/gallery/hbday.webp"
+	},
+	{
+		artTitle: "Baybay Friends",
+		imageUrl: "images/puddinhead/baybay.webp"
+	},
+	{
+		artTitle: "DTIYS Illustration 2",
+		imageUrl: "images/gallery/dtiys2.webp"
+	},
+	{
+		artTitle: "Haven Sketch",
+		imageUrl: "images/gallery/havensketch.webp"
+	},
+	{
+		artTitle: "Ameri Azazel",
+		imageUrl: "images/puddinhead/ameriazazel.webp"
+	},
+	{
+		artTitle: "Rapacity-Commission",
+		imageUrl: "images/puddinhead/commission.webp"
+	},
+	{
+		artTitle: "One Palette Challenge",
+		imageUrl: "images/puddinhead/onepalette.webp"
+	},
+	{
+		artTitle: "Golden Hour",
+		imageUrl: "images/puddinhead/goldenhour.webp"
+	},
+	{
+		artTitle: "Lucas-Commission",
+		imageUrl: "images/puddinhead/lucas.webp"
+	},
+	{
+		artTitle: "UP Lente Arts Week",
+		imageUrl: "images/puddinhead/uplenteartsweek.webp"
+	},
+	{
+		artTitle: "Pokemon Girls",
+		imageUrl: "images/puddinhead/pokemongirls.webp"
+	},
+	{
+		artTitle: "The Lovers DTIYS",
+		imageUrl: "images/puddinhead/theloversdtiys.webp"
+	},
+	{
+		artTitle: "VC Collab",
+		imageUrl: "images/puddinhead/vccollab.webp"
+	},
+	{
+		artTitle: "Patolini-Commission",
+		imageUrl: "images/puddinhead/commission3.webp"
+	},
+];
 
-	}
-]
+const puddinImg = document.querySelector("#Puddinheadart");
+puddinImg.addEventListener('click', () => {
+	const puddinInfo = document.createElement("div");
+	puddinInfo.className = "puddin-info";
+
+	const name = document.createElement("h1");
+	name.textContent = "Puddinheadart";
+	puddinInfo.appendChild(name);
+
+	const info = document.createElement("p");
+	info.className = "info-pudz";
+	info.textContent = "Self-taught digital artist from the Philippines with a love for all things geeky and artsy. Sofia Pantas was born in the small province of Biliran. Growing up, they became fascinated with anime and manga and this interest led them to begin a hobby in drawing and eventually a dream in becoming an artist.";
+	puddinInfo.appendChild(info);
+
+	const galleryTitle = document.createElement("h2");
+	galleryTitle.textContent = "ArtWork Gallery";
+	puddinInfo.appendChild(galleryTitle);
+
+	const gallery = document.createElement("div");
+	gallery.className = "puddin-gallery";
+	puddinInfo.appendChild(gallery);
+
+	puddinheadArts.forEach(art => {
+		let puddincard = document.createElement("section");
+		puddincard.className = "puddin-art-card";
+		let artName = document.createElement("h3");
+		let artImg = document.createElement("img");
+		artName.textContent = art.artTitle;
+		artImg.setAttribute("src", art.imageUrl);
+		artImg.setAttribute("alt", `${art.artTitle}`);
+		artImg.setAttribute("loading", "lazy");
+		artImg.setAttribute("width", "100%");
+		artImg.setAttribute("height", "100%");
+		puddincard.appendChild(artName);
+		puddincard.appendChild(artImg);
+
+		gallery.appendChild(puddincard);
+	});
+
+	document.querySelector("main").appendChild(puddinInfo);
+
+});
+
+// createPuddinArt();
+
+function createPuddinArt(){
+	puddinheadArts.forEach(puddinheadart =>{
+		let puddincard = document.createElement("section");
+		puddincard.className = "puddin-card";
+		let puddinName = document.createElement("h3");
+		let puddinImg = document.createElement("img");
+		puddinName.textContent = puddinheadart.artTitle;
+		puddinImg.setAttribute("src", puddinheadart.imageUrl);
+		puddinImg.setAttribute("alt", `${puddinheadart.artTitle}`);
+		puddinImg.setAttribute("loading", "lazy");
+		puddinImg.setAttribute("width", "100%");
+		puddinImg.setAttribute("height", "100%");
+		puddincard.appendChild(puddinName);
+		puddincard.appendChild(puddinImg);
+		document.querySelector(".puddin-info").appendChild(puddincard)
+	})
+}
+
+
 
 

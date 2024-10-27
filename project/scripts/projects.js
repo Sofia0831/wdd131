@@ -42,11 +42,11 @@ const projects = [
 		imageUrl: "images/gallery/alinasketch.webp"
 	},
 	{
-		projectName: "Birthday Collab 1 (puddin)",
+		projectName: "Birthday Collab 1",
 		imageUrl: "images/gallery/abday.webp"
 	},
     {
-		projectName: "Birthday Collab 2 (puddin)",
+		projectName: "Birthday Collab 2",
 		imageUrl: "images/gallery/hbday.webp"
 	},
     {
@@ -54,11 +54,11 @@ const projects = [
         imageUrl: "images/gallery/Kamila.webp"
 	},
     {
-        projectName: "Birthday Collab 1 (miko)",
+        projectName: "Birthday Collab 3",
         imageUrl: "images/gallery/ltwins.webp"
 	},
     {
-        projectName: "Birthday Collab 2 (miko)",
+        projectName: "Birthday Collab 4",
         imageUrl: "images/gallery/rtwins.webp"
     },
 	{
