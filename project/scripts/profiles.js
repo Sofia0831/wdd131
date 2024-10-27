@@ -188,25 +188,6 @@ puddinImg.addEventListener('click', () => {
 
 });
 
-// createPuddinArt();
-
-function createPuddinArt(){
-	puddinheadArts.forEach(puddinheadart =>{
-		let puddincard = document.createElement("section");
-		puddincard.className = "puddin-card";
-		let puddinName = document.createElement("h3");
-		let puddinImg = document.createElement("img");
-		puddinName.textContent = puddinheadart.artTitle;
-		puddinImg.setAttribute("src", puddinheadart.imageUrl);
-		puddinImg.setAttribute("alt", `${puddinheadart.artTitle}`);
-		puddinImg.setAttribute("loading", "lazy");
-		puddinImg.setAttribute("width", "100%");
-		puddinImg.setAttribute("height", "100%");
-		puddincard.appendChild(puddinName);
-		puddincard.appendChild(puddinImg);
-		document.querySelector(".puddin-info").appendChild(puddincard)
-	})
-}
 
 
 
