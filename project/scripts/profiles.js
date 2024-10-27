@@ -214,6 +214,58 @@ puddinImg.addEventListener('click', () => {
 
 });
 
+const MikoArts = [
+	{
+		artTitle: "Alina Sprite",
+		imageUrl: "images/gallery/Alina.webp"
+	},
+	{
+		artTitle: "Haven Sprite",
+		imageUrl: "images/gallery/Haven.webp"
+	},
+	{
+		artTitle: "Erato Sprite",
+		imageUrl: "images/gallery/Erato.webp"
+	},
+	{
+		artTitle: "Sailor Neptune",
+		imageUrl: "images/miko/sailorneptune.webp"
+	},
+	{
+		artTitle: "Jessie Mei Li Sketch",
+		imageUrl: "images/miko/jessie.webp"
+	},
+	{
+		artTitle: "Alina Illustration",
+		imageUrl: "images/gallery/Alina_2.webp"
+	},
+	{
+		artTitle: "DTIYS 1",
+		imageUrl: "images/gallery/dtiys1.webp"
+	},
+	{
+		artTitle: "Haven and Alina Illustration",
+		imageUrl: "images/gallery/bestieportait.webp"
+	},
+	{
+		artTitle: "Kamila Illustration",
+		imageUrl: "images/gallery/kamila.webp"
+	},
+	{
+		artTitle: "Clownie",
+		imageUrl: "images/miko/clownie.webp"
+	},
+	{
+		artTitle: "Spider Julia",
+		imageUrl: "images/miko/spidejulia.webp"
+	},
+	{
+		artTitle: "Vi",
+		imageUrl: "images/miko/vi.webp"
+	},
+	
+]
+
 
 
 
