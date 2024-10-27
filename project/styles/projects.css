@@ -152,6 +152,10 @@ footer p {
     text-align: center;
 }
 
+.projectsdiv {
+    padding: 2rem;
+}
+
 .art-card{
     max-width: 100%;
     margin-bottom: 20px;
