@@ -75,4 +75,16 @@
         padding: 2rem 5rem;
     }
 
+    /* ------------------------------------ Contact CSS -------------------------------------- */
+    .form-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+     fieldset 
+    {
+        width: 50%;
+        padding: 1.5rem 5rem 3rem 5rem;
+    }
+
 }
