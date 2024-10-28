@@ -169,7 +169,6 @@ input[type="submit"]
     border-radius: 6px;
     padding: 1rem;
     width: 100%;
-    max-width: 400px;
     background-color: var(--primary-color);
     color: var(--accent1-color);
 }
