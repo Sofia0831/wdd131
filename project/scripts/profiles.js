@@ -236,7 +236,7 @@ const mikoArts = [
 	},
 	{
 		artTitle: "Alina Illustration",
-		imageUrl: "images/gallery/alina_2.webp"
+		imageUrl: "images/gallery/alina-2.webp"
 	},
 	{
 		artTitle: "DTIYS 1",
