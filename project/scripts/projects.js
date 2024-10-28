@@ -87,25 +87,25 @@ const h2Text = document.querySelector("h2");
 
 const homeLink = document.querySelector("#gallery");
 homeLink.addEventListener("click", () => {
-	h2Text.textContent = "Gallery";
+	h2Text.textContent = `Gallery`;
 	createArtCard(projects);
 });
 
 const spritesLink = document.querySelector("#sprites");
 spritesLink.addEventListener("click", () => {
-	h2Text.textContent = "Sprites";
+	h2Text.textContent = `Sprites`;
 	createArtCard(projects.filter(project => project.projectName.includes("Sprite")));
 });
 
 const illustrationsLink = document.querySelector("#illustrations")
 illustrationsLink.addEventListener("click", () => {
-    h2Text.textContent = "Illustrations";
+    h2Text.textContent = `Illustrations`;
     createArtCard(projects.filter(project => project.projectName.includes("Illustration")));
 });
 
 const collabLink = document.querySelector("#collabs")
 collabLink.addEventListener("click", () => {
-    h2Text.textContent = "Collabs";
+    h2Text.textContent = `Collabs`;
     createArtCard(projects.filter(project => project.projectName.includes("Collab")));
 });
 
