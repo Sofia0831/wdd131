@@ -22,12 +22,12 @@ const projects = [
 		imageUrl: "images/gallery/alina.webp"
 	},
 	{
-		projectName: "Haven Sprite",
-		imageUrl: "images/gallery/haven.webp"
-	},
-	{
 		projectName: "Erato Sprite",
 		imageUrl: "images/gallery/erato.webp"
+	},
+	{
+		projectName: "Haven Sprite",
+		imageUrl: "images/gallery/haven.webp"
 	},
 	{
 		projectName: "Haven Sketch",
