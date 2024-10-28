@@ -346,6 +346,93 @@ mikoImg.addEventListener('click', () =>{
 	}
 });
 
+const yuiArts = [
+	{
+		artTitle: "Little Nightmares",
+		imageUrl: "images/yui/littlenightmares.webp"
+	},
+	{
+		artTitle: "Rekka",
+		imageUrl: "images/yui/rekka.webp"
+	},
+	{
+		artTitle: "Zyra",
+		imageUrl: "images/yui/zyra.webp"
+	},
+	{
+		artTitle: "Support",
+		imageUrl: "images/yui/comic.webp"
+	}
+];
+
+let yuiInfoDisplayed = false;
+const yuiImg = document.querySelector('#Yui');
+yuiImg.addEventListener('click', () =>{
+	if (!yuiInfoDisplayed)
+	{
+		yuiInfoDisplayed = true;
+
+		const yuiInfo = document.createElement("div");
+		yuiInfo.className = "profile-info";
+
+		const name = document.createElement("h1");
+		name.textContent = "Yui Gaviola";
+		yuiInfo.appendChild(name);
+
+		const contact = document.createElement("a");
+		contact.textContent = "Art Profile";
+		contact.href = "https://www.facebook.com/frosted.sardonyx"
+		contact.target = "_blank";
+        contact.style.textDecoration = "underline";
+
+		const website = document.createElement("p");
+		website.textContent = "Website: "
+		website.appendChild(contact);
+		yuiInfo.appendChild(website);
+
+		const info = document.createElement("p");
+		info.textContent = "Sometimes harboring many names, Yui is the literary master of Kamalayi Studio. With a passion for storytelling that spans genres, they weave together rich narratives that explore the complexities of human experience. While primarily a writer, they occassionally turn to canvas and color.";
+		yuiInfo.appendChild(info);
+
+		const galleryTitle = document.createElement("h2");
+		galleryTitle.textContent = "ArtWork Gallery";
+		yuiInfo.appendChild(galleryTitle);
+
+		const gallery = document.createElement("div");
+		gallery.className = "profile-gallery";
+		yuiInfo.appendChild(gallery);
+
+		yuiArts.forEach(art => {
+			let yuiCard = document.createElement("section");
+			yuiCard.className = "profile-art-card";
+			let artName = document.createElement("h3");
+			let artImg = document.createElement("img");
+			artName.textContent = art.artTitle;
+			artImg.setAttribute("src", art.imageUrl);
+			artImg.setAttribute("alt", `${art.artTitle}`);
+			artImg.setAttribute("loading", "lazy");
+			artImg.setAttribute("width", "100%");
+			artImg.setAttribute("height", "100%");
+			yuiCard.appendChild(artName);
+			yuiCard.appendChild(artImg);
+
+			gallery.appendChild(yuiCard);
+		});
+
+		document.querySelector("main").appendChild(yuiInfo);
+
+		const closeButton = document.createElement("button");
+		closeButton.className = "profile-button"
+        closeButton.textContent = "Close";
+        closeButton.addEventListener('click', () => {
+            yuiInfo.remove();
+            yuiInfoDisplayed = false;
+        });
+        yuiInfo.appendChild(closeButton);
+
+	}
+});
+
 
 
 
