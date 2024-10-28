@@ -14,3 +14,11 @@ const footerParagraphs = document.querySelector("footer").querySelectorAll("p");
 footerParagraphs[0].textContent = `Copyright ©️ ${currentYear} KAMALAYI STUDIOS. Philippines`;
 footerParagraphs[1].textContent = `Last modified: ${lastModifiedDate}`;
 
+
+
+function incrementFormCount() {
+	let formCount = parseInt(localStorage.getItem('formCount')) || 0;
+	formCount++;
+	localStorage.setItem('formCount', formCount);
+	console.log(`Total forms completed: ${formCount}`);
+  }

@@ -19,25 +19,25 @@
         <button aria-label="Menu Button" type="button" id="menu"></button>
         <div class="navi">
             <nav class="navigation">
-                <a href="kamalayistudio.html" id="home" title="Home" class="active">Home</a>
+                <a href="kamalayistudio.html" id="home" title="Home">Home</a>
                 <a href="projects.html" id="project" title="Projects">Projects</a>
                 <a href="profiles.html" id="profiles" title="Profiles">Profiles</a>
-                <a href="#" id="contact" title="Contact">Contact</a>
+                <a href="#" id="contact" title="Contact" class="active">Contact</a>
             </nav>
         </div>
 
     </header>
 
     <main>
+        <h2>Send Us a Message</h2>
+        <p>Send us a message and we'll try to respond within 48 hours</p>
         <div class="form-container">
-            <h2>Send Us a Message</h2>
-            <p>Send us a message and we'll try to respond within 24 hours</p>
-            <form method="get" action="message.html">
+            <form id="myForm" method="get" action="message.html">
                 <fieldset>
-                    <label for="name">Name <span class="required">(required)</span></label>
+                    <label for="name">Name <span class="required">*</span></label>
                     <input type="text" id="name" name="name" placeholder="Your name" required>
 
-                    <label for="email">Email <span class="required">(required)</span></label>
+                    <label for="email">Email <span class="required">*</span></label>
                     <input type="email" id="email" name="email" placeholder="name@domain.com" required>
 
                     <label>Your Message</label>
@@ -46,9 +46,14 @@
                     <input type="submit" value="Send my message">
                 </fieldset>
 
-
-
             </form>
+            <aside>
+                <h3>General Questions</h3>
+                <p>
+                    If you need to contact us for any reason, feel free to either fill out this form or contact us on Twitter.
+                    We’ll try to respond within 2 working days, but usually sooner.
+                </p>
+            </aside>
         </div>
 
     </main>

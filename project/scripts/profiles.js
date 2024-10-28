@@ -304,7 +304,7 @@ mikoImg.addEventListener('click', () =>{
 		mikoInfo.appendChild(website);
 
 		const info = document.createElement("p");
-		info.textContent = "Art progidy whose love for the movie 'Frozen' pushed them to pursue art during their youth. While initially focusing on semi-realism, they've started branching out towards pixel art.";
+		info.textContent = "Maximalist not by choice, but by disorder. An art progidy whose love for the movie 'Frozen' pushed them to pursue art during their youth. While initially focusing on semi-realism, they've started branching out towards pixel art.";
 		mikoInfo.appendChild(info);
 
 		const galleryTitle = document.createElement("h2");

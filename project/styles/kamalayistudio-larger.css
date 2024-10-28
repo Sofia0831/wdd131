@@ -77,14 +77,32 @@
 
     /* ------------------------------------ Contact CSS -------------------------------------- */
     .form-container {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        padding: 0 50px;
     }
 
      fieldset 
     {
-        width: 50%;
         padding: 1.5rem 5rem 3rem 5rem;
+    }
+
+    .message, aside {
+        padding: 10rem 3rem;   
+        text-align: justify; 
+    }
+   
+    aside h3 {
+        padding-bottom: 1rem;
+    }
+
+    aside p {
+        text-align: justify;
+    }
+
+    .message h3 {
+        text-align: center;
     }
 
 }

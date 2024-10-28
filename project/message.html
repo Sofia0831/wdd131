@@ -12,14 +12,14 @@
 
     <script defer src="scripts/contact.js"></script>
 </head>
-<body>
+<body onload="incrementFormCount()">
     <header>
 
         <h1>KAMALAYI STUDIOS</h1>
         <button aria-label="Menu Button" type="button" id="menu"></button>
         <div class="navi">
             <nav class="navigation">
-                <a href="kamalayistudio.html" id="home" title="Home" class="active">Home</a>
+                <a href="kamalayistudio.html" id="home" title="Home">Home</a>
                 <a href="projects.html" id="project" title="Projects">Projects</a>
                 <a href="profiles.html" id="profiles" title="Profiles">Profiles</a>
                 <a href="contact.html" id="contact" title="Contact">Contact</a>
@@ -29,8 +29,21 @@
     </header>
 
     <main>
-        
-
+        <h2>Send Us a Message</h2>
+        <p>Send us a message and we'll try to respond within 48 hours</p>
+        <div class="form-container">
+            <div class="message">
+                <h3>Message Submitted</h3>
+                <p>Your message has been successfully sent! We'll try to get back to you as soon as possible.</p>
+            </div>
+            <aside>
+                <h3>General Questions</h3>
+                <p>
+                    If you need to contact us for any reason, feel free to either fill out this form or contact us on Twitter.
+                    We’ll try to respond within 2 working days, but usually sooner.
+                </p>
+            </aside>
+        </div>
     </main>
 
     <footer>
