@@ -64,18 +64,6 @@ const projects = [
 	{
 		projectName: "DTIYS Illustration 2",
 		imageUrl: "images/gallery/dtiys2.webp"
-	},
-	{
-		projectName: "Alina Sprite",
-		imageUrl: "images/gallery/alina.webp"
-	},
-	{
-		projectName: "Erato Sprite",
-		imageUrl: "images/gallery/erato.webp"
-	},
-	{
-		projectName: "Haven Sprite",
-		imageUrl: "images/gallery/haven.webp"
 	}
 ];
 
