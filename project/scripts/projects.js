@@ -19,15 +19,15 @@ footerParagraphs[1].textContent = `Last modified: ${lastModifiedDate}`;
 const projects = [
 	{
 		projectName: "Alina Sprite",
-		imageUrl: "images/gallery/Alina.webp"
+		imageUrl: "images/gallery/alina.webp"
 	},
 	{
 		projectName: "Haven Sprite",
-		imageUrl: "images/gallery/Haven.webp"
+		imageUrl: "images/gallery/haven.webp"
 	},
 	{
 		projectName: "Erato Sprite",
-		imageUrl: "images/gallery/Erato.webp"
+		imageUrl: "images/gallery/erato.webp"
 	},
 	{
 		projectName: "Haven Sketch",
@@ -63,7 +63,7 @@ const projects = [
     },
 	{
 		projectName: "Alina Illustration",
-		imageUrl: "images/gallery/Alina_2.webp"
+		imageUrl: "images/gallery/alina-2.webp"
 	},
 	{
 		projectName: "Haven and Alina Illustration",
