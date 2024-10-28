@@ -216,15 +216,15 @@ puddinImg.addEventListener('click', () => {
 const mikoArts = [
 	{
 		artTitle: "Alina Sprite",
-		imageUrl: "images/gallery/Alina.webp"
+		imageUrl: "images/alina.webp"
 	},
 	{
 		artTitle: "Haven Sprite",
-		imageUrl: "images/gallery/Haven.webp"
+		imageUrl: "images/haven.webp"
 	},
 	{
 		artTitle: "Erato Sprite",
-		imageUrl: "images/gallery/Erato.webp"
+		imageUrl: "images/erato.webp"
 	},
 	{
 		artTitle: "Sailor Neptune",
@@ -236,7 +236,7 @@ const mikoArts = [
 	},
 	{
 		artTitle: "Alina Illustration",
-		imageUrl: "images/gallery/Alina_2.webp"
+		imageUrl: "images/gallery/alina_2.webp"
 	},
 	{
 		artTitle: "DTIYS 1",
