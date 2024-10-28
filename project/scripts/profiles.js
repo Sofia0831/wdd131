@@ -156,26 +156,26 @@ puddinImg.addEventListener('click', () => {
 		puddinInfo.className = "profile-info";
 
 		const name = document.createElement("h1");
-		name.textContent = "Puddinheadart";
+		name.textContent = `Puddinheadart`;
 		puddinInfo.appendChild(name);
 
 		const contact = document.createElement("a");
-		contact.textContent = "Puddinhead's Carrd";
+		contact.textContent = `Puddinhead's Carrd`;
 		contact.href = "https://sofiapantas.carrd.co/"
 		contact.target = "_blank";
         contact.style.textDecoration = "underline";
 
 		const website = document.createElement("p");
-		website.textContent = "Website: "
+		website.textContent = `Website: `;
 		website.appendChild(contact);
 		puddinInfo.appendChild(website);
 
 		const info = document.createElement("p");
-		info.textContent = "Self-taught digital artist from the Philippines with a love for all things geeky and artsy. Growing up, they became fascinated with anime and videogames and this interest led them to begin a hobby in drawing and eventually a dream in becoming an artist and game developer.";
+		info.textContent = `Self-taught digital artist from the Philippines with a love for all things geeky and artsy. Growing up, they became fascinated with anime and videogames and this interest led them to begin a hobby in drawing and eventually a dream in becoming an artist and game developer.`;
 		puddinInfo.appendChild(info);
 
 		const galleryTitle = document.createElement("h2");
-		galleryTitle.textContent = "ArtWork Gallery";
+		galleryTitle.textContent = `ArtWork Gallery`;
 		puddinInfo.appendChild(galleryTitle);
 
 		const gallery = document.createElement("div");
@@ -203,7 +203,7 @@ puddinImg.addEventListener('click', () => {
 
 		const closeButton = document.createElement("button");
 		closeButton.className = "profile-button"
-        closeButton.textContent = "Close";
+        closeButton.textContent = `Close`;
         closeButton.addEventListener('click', () => {
             puddinInfo.remove();
             puddinInfoDisplayed = false;
@@ -289,26 +289,26 @@ mikoImg.addEventListener('click', () =>{
 		mikoInfo.className = "profile-info";
 
 		const name = document.createElement("h1");
-		name.textContent = "MikoCappuccino";
+		name.textContent = `MikoCappuccino`;
 		mikoInfo.appendChild(name);
 
 		const contact = document.createElement("a");
-		contact.textContent = "MikoCappuccino's Carrd";
+		contact.textContent = `MikoCappuccino's Carrd`;
 		contact.href = "https://mikocappuccino.carrd.co/"
 		contact.target = "_blank";
         contact.style.textDecoration = "underline";
 
 		const website = document.createElement("p");
-		website.textContent = "Website: "
+		website.textContent = `Website: `
 		website.appendChild(contact);
 		mikoInfo.appendChild(website);
 
 		const info = document.createElement("p");
-		info.textContent = "Maximalist not by choice, but by disorder. An art progidy whose love for the movie 'Frozen' pushed them to pursue art during their youth. While initially focusing on semi-realism, they've started branching out towards pixel art.";
+		info.textContent = `Maximalist not by choice, but by disorder. An art progidy whose love for the movie 'Frozen' pushed them to pursue art during their youth. While initially focusing on semi-realism, they've started branching out towards pixel art.`;
 		mikoInfo.appendChild(info);
 
 		const galleryTitle = document.createElement("h2");
-		galleryTitle.textContent = "ArtWork Gallery";
+		galleryTitle.textContent = `ArtWork Gallery`;
 		mikoInfo.appendChild(galleryTitle);
 
 		const gallery = document.createElement("div");
@@ -337,7 +337,7 @@ mikoImg.addEventListener('click', () =>{
 
 		const closeButton = document.createElement("button");
 		closeButton.className = "profile-button"
-        closeButton.textContent = "Close";
+        closeButton.textContent = `Close`;
         closeButton.addEventListener('click', () => {
             mikoInfo.remove();
             mikoInfoDisplayed = false;
@@ -376,26 +376,26 @@ yuiImg.addEventListener('click', () =>{
 		yuiInfo.className = "profile-info";
 
 		const name = document.createElement("h1");
-		name.textContent = "Yui Gaviola";
+		name.textContent = `Yui Gaviola`;
 		yuiInfo.appendChild(name);
 
 		const contact = document.createElement("a");
-		contact.textContent = "Art Profile";
+		contact.textContent = `Art Profile`;
 		contact.href = "https://www.facebook.com/frosted.sardonyx"
 		contact.target = "_blank";
         contact.style.textDecoration = "underline";
 
 		const website = document.createElement("p");
-		website.textContent = "Website: "
+		website.textContent = `Website: `
 		website.appendChild(contact);
 		yuiInfo.appendChild(website);
 
 		const info = document.createElement("p");
-		info.textContent = "Sometimes harboring many names, Yui is the literary master of Kamalayi Studio whose interests lie in the creative field. With a passion for storytelling that spans genres, they weave together rich narratives that explore the complexities of human experience. While primarily a writer, they occassionally turn to canvas and color.";
+		info.textContent = `Sometimes harboring many names, Yui is the literary master of Kamalayi Studio whose interests lie in the creative field. With a passion for storytelling that spans genres, they weave together rich narratives that explore the complexities of human experience. While primarily a writer, they occassionally turn to canvas and color.`;
 		yuiInfo.appendChild(info);
 
 		const galleryTitle = document.createElement("h2");
-		galleryTitle.textContent = "ArtWork Gallery";
+		galleryTitle.textContent = `ArtWork Gallery`;
 		yuiInfo.appendChild(galleryTitle);
 
 		const gallery = document.createElement("div");
@@ -423,7 +423,7 @@ yuiImg.addEventListener('click', () =>{
 
 		const closeButton = document.createElement("button");
 		closeButton.className = "profile-button"
-        closeButton.textContent = "Close";
+        closeButton.textContent = `Close`;
         closeButton.addEventListener('click', () => {
             yuiInfo.remove();
             yuiInfoDisplayed = false;
