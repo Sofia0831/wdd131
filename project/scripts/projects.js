@@ -18,15 +18,15 @@ footerParagraphs[1].textContent = `Last modified: ${lastModifiedDate}`;
 
 const projects = [
 	{
-		projectName : "Alina",
+		projectName : "Alina Sprite",
 		imageUrl: "images/alina.webp"
 	},
 	{
-		projectName : "Haven",
+		projectName : "Haven Sprite",
 		imageUrl: "images/haven.webp"
 	},
 	{
-		projectName : "Erato",
+		projectName : "Erato Sprite",
 		imageUrl: "images/erato.webp"
 	},
 	{
