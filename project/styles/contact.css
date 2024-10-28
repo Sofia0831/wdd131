@@ -150,7 +150,6 @@ label
 textarea 
 {
     width: 100%;
-    max-width: 400px;
     height: 100px;
     padding: .5rem;
 }
@@ -159,7 +158,6 @@ input[type="text"], input[type="email"]
 {
     display: block;
     width: 100%;
-    max-width: 400px;
     padding: .75rem;
     
 }
