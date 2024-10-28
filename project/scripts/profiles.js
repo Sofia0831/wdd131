@@ -391,7 +391,7 @@ yuiImg.addEventListener('click', () =>{
 		yuiInfo.appendChild(website);
 
 		const info = document.createElement("p");
-		info.textContent = "Sometimes harboring many names, Yui is the literary master of Kamalayi Studio. With a passion for storytelling that spans genres, they weave together rich narratives that explore the complexities of human experience. While primarily a writer, they occassionally turn to canvas and color.";
+		info.textContent = "Sometimes harboring many names, Yui is the literary master of Kamalayi Studio whose interests lie in the creative field. With a passion for storytelling that spans genres, they weave together rich narratives that explore the complexities of human experience. While primarily a writer, they occassionally turn to canvas and color.";
 		yuiInfo.appendChild(info);
 
 		const galleryTitle = document.createElement("h2");
